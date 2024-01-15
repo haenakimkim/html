@@ -1,0 +1,43 @@
+<!--그룹선택자-->
+p,#title,.red{
+  color red;
+}
+
+<!--자식 선택자-->
+p{}
+.box > p {
+  color : red;
+}
+
+<!--하위 선택자-->
+<style>
+  div p{
+    color:red;
+  }
+  </style>
+  <div>
+    <p>lorem1</p>
+    <ul>
+    <li>
+      <p>lorem2</p>
+      </li>
+    </ul>
+    </div>
+
+  <!--인접형제 선택자-->
+  <style>
+  h1 + h2 {
+    color:red;
+  }  
+</style>
+<h1>lorem1</h1>
+<h2>lorem2</h2>
+
+<!--일반 형제 선택자-->
+<style>
+  h1~h2{
+    color: red;
+  }
+</style>
+<h1>lorem1</h1>
+<h2>lorem2</h2>

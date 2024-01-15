@@ -1,0 +1,58 @@
+<!--가상요소 선택자 사용하기-->
+<style>
+  p::before{
+  content:'<before>';
+  }
+  p::after{
+    content:'<after>';
+  }
+  </style>
+  <p>Lorem, ipsum dolor.</p>
+
+ <!--가상 클래스 선택자 사용하기-->
+ <style>
+ a:link{
+  color:orange;
+ }
+ a:visited{
+  color:green;
+ }
+ </style>
+
+ <style>
+  p:hover{
+    color:red;
+  }
+  </style>
+  <style>
+    button:active{
+      color:red;
+    }
+  </style>
+
+  <style>
+    input:focus{
+      color:red;
+    }
+    </style>
+  <style>
+    input:checked + label{
+      color:red;
+    }   
+    </style>
+
+    <style>
+      input:disabled,
+      button:disabled{
+      background-color:#ccc;
+    </style>
+       <input type="text" disabled>
+       <button disabled>버튼</button>
+    <style>
+      input:enabled,
+      button:enabled{
+        background-color:#ccc;
+      }
+      </style>
+      <input type="text">
+      <button>버튼</button>
